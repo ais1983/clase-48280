@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+img {
+    max-width: 100%;
+}
+html{
+    font-size: 62.5%;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 3rem;
+    background-color: blueviolet;
+}
+
+.logo {
+    margin-bottom: 3rem;
+}
+
+.logo {
+    width: 100px;
+}
+
+header a {
+    margin-top: 2rem;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+.menu li a {
+    text-decoration: none;
+    color: yellowgreen;
+    font-size: 1.8rem;
+    transition: all 0.5s;
+}
+
+.menu li a:hover{
+    background-color: blue;
+    color: red;
+    padding: 10px;
+    border-radius: 20%;
+    cursor: grab;
+}
+
+@media (min-width: 768px) {
+    header {
+    flex-direction : row;
+    justify-content: space-around; 
+    }
+}
+
+h1{
+    text-align: center;
+    font-size: 4rem;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    color: rgba(233, 4, 4, 0.959);
+}
+
+h2{
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    color: aqua;
+    margin-top: 2rem;
+}
+h3{
+    text-align: center;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+}
+
+.casa_embrujada{
+    width: 40rem;
+}
+
+.casa_embrujada{
+    margin-top: 40rem;
+}
+footer p {
+    margin-top: 5rem;
+    font-size: 2rem;
+    background-color: blueviolet;
+    padding: 2rem;
+    text-align: center;
+}
+
+.gradiante-lineal{
+    background-image: linear-gradient(to left, black, grey) ;
+}
+
+.gradiante-radial{
+    background-image: radial-gradient(blue 15%,blueviolet 60%,white );
+}
+
+.gradiante-lineal-1{
+    background-image: repeating-linear-gradient(to top, red, yellowgreen) ;
+}
+
+.gradiante-2{
+    background-image: repeating-radial-gradient(green 20%,rgba(207, 209, 54, 0.301) 40%,rgb(5, 2, 2) 5%);
+}
+
+/*animaciones*/
+.caja-animaciones{
+    background-color: cadetblue;
+    width: 200px;
+    height: 200px;
+
+    /*tralado*/
+    transform: translate(100px,40px);
+
+    /*rotacion*/
+    transform: rotate(115deg);
+}
+
+.rotaciones{
+    margin-top: 100px;
+    margin-left: 50px;
+    background-image:url(../img/mokepons.png);
+    width: 200px;
+    height: 200px;
+    transform: rotatex(240deg);
+}
+
+.escalar{
+    margin-top: 100px;
+    margin-left: 50px;
+    background-image:url(../img/camiseta-futbol-colombia.png);
+    width: 300px;
+    height: 300px;
+    /*transform: scale(1.2,1.2);*/
+    transform: skew(30deg, 15deg);
+    transition: all 1s;
+}
+
+.escalar:hover{
+    transform: scale(1.5, 1.5);
+    cursor: pointer;
+}
+
+.focus-animado{
+    transition: all 2s;
+}
+
+.focus-animado:focus{
+    width: 400px;
+}
+
+/*animando barra*/
+.keyframe {
+    margin-top: 50px;
+    background-color: firebrick;
+    width: 150px;
+    height: 150px;
+
+    /*PASOS NECESARIOS PARA LA ANIMACION*/
+    /*nombre de la animacion*/
+    animation-name: efecto-barra;
+
+    /*cuantas veces se repite*/
+    animation-iteration-count: infinite;
+
+    /*estiulo de la animacion*/
+    animation-timing-function: ease-in;
+
+    /*duracion**/
+    animation-duration: 5s;
+
+    /*en cuanto tiempo quiero q inicie*/
+    animation-delay: 5s;
+}
+
+/*los cambios para q funcione la animacion van dentro se la @keyframes*/
+@keyframes efecto-barra {
+    0%{
+        width: 100px;
+    }
+    10%{
+        width: 50px;
+    }
+    25%{
+        width: 300px;
+    }
+    50%
+    {width: 200px;
+        background-color: chartreuse;
+    }
+    75%{
+        width: 300px;
+    }
+    100%{width: 100px;
+        background-color: blue;
+    }
+}
+
+/*animacion de barra progreso*/
+.barra-progreso{
+    margin-top: 50px;
+    width: 300px;
+    border: solid 2px;
+    height: 10px;
+}
+
+.barra-rellena{
+    border: solid 1px;
+    height: 9px;
+    width: 60%;/*este se puede evitar para q comience desde 0*/
+    background-color: cornflowerblue;
+    animation: cargando 1s infinite;/*se puede omitir el "infinite" para q despues de cargar se detenga*/
+}
+
+@keyframes cargando{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+        background-color: rgb(167, 220, 20);
+    }
+}
+
+h1{
+    animation-duration: 8s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+}
+
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 3;
+    }
+}
