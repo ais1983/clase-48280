@@ -1,0 +1,9 @@
+comandos:
+
+1.git init= este sirve para comenzar a trabajar con git, solo se escribe la primera vez
+
+2.git status= indica el estado del respositorio
+
+3.git add . = añadimos todos los archivos q git encuentre
+
+4.git commit -m "NOMBRE DEL COMMIT"= 
