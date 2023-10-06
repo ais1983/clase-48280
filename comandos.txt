@@ -6,4 +6,12 @@ comandos:
 
 3.git add . = añadimos todos los archivos q git encuentre
 
-4.git commit -m "NOMBRE DEL COMMIT"= 
+4.git commit -m "NOMBRE DEL COMMIT"= para guardar los cambios realizados en el codigo, es necesario poner nombre para saber donde se hizo el cambio
+
+5.git log = para conocer el historial de todos los cambios realizados en git
+
+6.git log --oneline = para ver el historial en una sola linea
+
+7.git branch= para saber en q rama del repositorio estoy
+
+8.
