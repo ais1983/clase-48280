@@ -24,4 +24,4 @@ comandos:
 
 12.git checkout (codigo del commit) para poder moverme entre los commit y revisarlos
 
-13.git merge = este es para fusionar la rama con los cambios al master o main para poderlos aplicar en el codigo principal,PARA FUSIONAR LOS CAMBIOS DEBO ESTAR EN LA RAMA PRINCIPAL
+13.git merge "nombre de la rama" = este es para fusionar la rama con los cambios al master o main para poderlos aplicar en el codigo principal,PARA FUSIONAR LOS CAMBIOS DEBO ESTAR EN LA RAMA PRINCIPAL
