@@ -97,7 +97,7 @@ footer p {
 }
 
 .gradiante-lineal{
-    background-image: linear-gradient(to left, black, grey) ;
+    background-color: aquamarine;
 }
 
 .gradiante-radial{
@@ -244,4 +244,9 @@ h1{
     100%{
         opacity: 3;
     }
+}
+
+.titulo-git {
+    font-size: 6rem;
+    color: antiquewhite;
 }
