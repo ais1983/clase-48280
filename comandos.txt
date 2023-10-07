@@ -14,4 +14,14 @@ comandos:
 
 7.git branch= para saber en q rama del repositorio estoy
 
-8.
+8.Antes de crear una rama se deben guardar los cambios y guardar el commit
+
+9.git branch (nombre de rama)= para crear una nueva rama o alterna al codigo principal, en esta se pueden hacer cambio sin  dañar o modificar el codigo principal  
+
+10.git checkout"(nombre de rama)"para cambiar de rama principal a rama nueva y hacer cambios sin afectar el codigo principal
+
+11.git branch -D(nombre de rama)= este se utiliza para borrar ramas cuando ya no se necesiten o solo se quiera eliminar, SE DEBE ESTAR POSADO EN MASTER O MAIN PARA PODER BORRAR LA RAMA.
+
+12.git checkout (codigo del commit) para poder moverme entre los commit y revisarlos
+
+13.git merge = este es para fusionar la rama con los cambios al master o main para poderlos aplicar en el codigo principal
